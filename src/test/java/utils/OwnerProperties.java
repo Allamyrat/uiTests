@@ -5,7 +5,7 @@ import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 
 @Tag("properties")
-public class Owner {
-    public CredentialsConfig credentials=
+public class OwnerProperties {
+    public static CredentialsConfig credentials=
             ConfigFactory.create(CredentialsConfig.class);
 }
