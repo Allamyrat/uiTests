@@ -8,12 +8,12 @@ import static io.qameta.allure.Allure.step;
 
 public class LoginPage extends HomePage{
 
-    SelenideElement username=$("#login");
-    SelenideElement password=$("#password");
-    SelenideElement submit=$(byText("Log in"));
+    static SelenideElement username=$("#login");
+    static SelenideElement password=$("#password");
+    static SelenideElement submit=$(byText("Log in"));
 
 
-    public void login(){
+    public static void login(){
         step("Navigate to Loginpage",() ->{
             navigateToLoginPage();
         });

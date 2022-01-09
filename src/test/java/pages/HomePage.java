@@ -9,9 +9,9 @@ import static io.qameta.allure.Allure.step;
 
 public class HomePage {
 
-    SelenideElement LoginButton=$(byText("Log In"));
+    static SelenideElement LoginButton=$(byText("Log In"));
 
-    public void navigateToLoginPage(){
+    public static void navigateToLoginPage(){
         step("Navigate to Homepage", () -> {
            open(OwnerProperties.credentials.homePageUrl());
         });
